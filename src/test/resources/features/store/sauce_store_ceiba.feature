@@ -6,13 +6,16 @@ Feature: Search by keyword
     When  he login with account
       | username | standard_user |
       | password | secret_sauce |
-    And  he select an article
+    And he validate user intro a your account
+    And  he select an articles
       | 1 |
       | 2 |
       | 4 |
-    And   he confirm order on shopping cart
-    And  he add data user for purchase
+    And he open cart visible products selected
+    And he confirm order on shopping cart
+    And he add data user for purchase
       | firstname | 'Ceiba'    |
       | lastname  | 'Software' |
       | zipcode   | 18172      |
-    Then  he should be to see confirm purchase message
+    And  he should be to see confirm purchase message
+    Then he validate the purchase message

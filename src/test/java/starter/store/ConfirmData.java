@@ -14,7 +14,6 @@ public class ConfirmData{
     }
 
     public static String message(Actor actor) {
-        String response = actor.asksFor(Text.of(LocationUi.HEADER_COMPLETE).asString());
-        return response;
+        return actor.asksFor(Text.of(LocationUi.HEADER_COMPLETE).asString());
     }
 }
